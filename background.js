@@ -11,18 +11,14 @@ function updateIcon() {
 		}
 	});
 }
-	
+
 function toggleAddonActive() {
 	isActive = !isActive;
 
 	updateIcon();
 
 	browser.tabs.executeScript(null, {
-		file: '/index.js'
-	});
-
-	browser.runtime.sendMessage({
-		isActive
+		file: isActive ? '/activate.js' : '/deactivate.js'
 	});
 }
 
