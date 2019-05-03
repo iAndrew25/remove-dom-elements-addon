@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Remove DOM element",
+	"version": "1.0",
+	"description": "Removes a DOM element just by clicking on it.",
+	"homepage_url": "https://github.com/iAndy3/remove-dom-elements-addon",
+	"icons": {
+		"32": "icons/logo-active-32.png",
+		"64": "icons/logo-active-64.png"
+	},
+	"browser_action": {
+		"default_icon": "icons/logo-inactive-64.png",
+		"default_title": "Remove DOM element"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": [
+		"activeTab",
+		"tabs"
+	]
+}
